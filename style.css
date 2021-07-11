@@ -29,17 +29,26 @@ section {
   padding-bottom: 10%;
   padding-top: 2%;
   overflow: hidden;
+  justify-content: space-around;
 }
 .container {
-  padding: 50px;
   font-family: "Poppins", sans-serif;
   line-height: 2;
+  padding-left: 10%;
+  padding-right: 20%;
+}
+.image-container {
+  margin-right: 2%;
 }
 .container .name {
   color: rgb(145, 92, 1);
 }
+.container h1,
+.name {
+  font-size: 2rem;
+}
 .container p {
-  width: 50%;
+  font-size: 1rem;
 }
 
 .container a {
@@ -73,8 +82,9 @@ section {
   justify-content: space-around;
   overflow: hidden;
 }
-#work image-container {
+.image-container {
   width: 50%;
+  margin-left: 2%;
 }
 .containerTwo {
   float: right;
@@ -159,12 +169,12 @@ h3 {
   margin-top: 5%;
 }
 #project {
-  clip-path: polygon(0 19%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0% 100%);
   background: pink;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 15%;
+  padding-top: 10%;
   padding-bottom: 5%;
 }
 
@@ -217,4 +227,26 @@ footer {
 }
 .fa-google {
   color: #d44638;
+}
+@media (max-width: 724px) {
+  .image-container {
+    display: none;
+  }
+  #home {
+    flex-direction: column;
+  }
+  .container {
+    padding-left: 20%;
+    padding-right: 10%;
+  }
+  .container-project {
+    display: grid;
+    place-items: center;
+  }
+  .project {
+    width: 100%;
+  }
+  #project {
+    padding-top: 30%;
+  }
 }
